@@ -5,7 +5,7 @@ metadata:
   name: envoyproxy
   namespace: demoapp-gw
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-staging
+    cert-manager.io/cluster-issuer: letsencrypt-production
 spec:
   gatewayClassName: envoy
   listeners:

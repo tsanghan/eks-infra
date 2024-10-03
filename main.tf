@@ -22,7 +22,7 @@ resource "aws_route53_record" "example" {
   type    = "A"
 
   alias {
-    name                   = "a910d09ea91ff4a91becdc57e6f92997-1850813680.ap-southeast-1.elb.amazonaws.com"
+    name                   = "afa2d19f3184b447f9d1528a619092f5-384447073.ap-southeast-1.elb.amazonaws.com"
     zone_id                = "Z1LMS91P8CMLE5"
     evaluate_target_health = false
   }
