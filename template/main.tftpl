@@ -16,7 +16,7 @@ data "aws_route53_zone" "selected" {
   name = "sctp-sandbox.com."
 }
 
-resource "aws_route53_record" "example" {
+resource "aws_route53_record" "cymbal" {
   zone_id = data.aws_route53_zone.selected.zone_id
   name    = "cymbal"
   type    = "A"
@@ -26,4 +26,12 @@ resource "aws_route53_record" "example" {
     zone_id                = "Z1LMS91P8CMLE5"
     evaluate_target_health = false
   }
+}
+
+resource "aws_route53_record" "caa" {
+  zone_id = data.aws_route53_zone.selected.zone_id
+  name    = data.aws_route53_zone.selected.name
+  type    = "CAA"
+  ttl     = 60
+  records = ["0 issue \"amazon.com\"", "128 issue \"letsencrypt.org\""]
 }
