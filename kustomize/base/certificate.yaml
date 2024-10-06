@@ -18,5 +18,5 @@ spec:
     - key encipherment
     - server auth
   issuerRef:
-    name: letsencrypt-production
+    name: letsencrypt-staging
     kind: ClusterIssuer

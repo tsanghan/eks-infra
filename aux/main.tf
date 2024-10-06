@@ -22,7 +22,7 @@ resource "aws_route53_record" "cymbal" {
   type    = "A"
 
   alias {
-    name                   = "afa3ee4674e3a4ecf881480517e2a69f-47522125.ap-southeast-1.elb.amazonaws.com"
+    name                   = "a1de2e754e7c04da480fb7ef4e96c4ae-959454185.ap-southeast-1.elb.amazonaws.com"
     zone_id                = "Z1LMS91P8CMLE5"
     evaluate_target_health = false
   }
